@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1786.85 1743.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffe267;
+      }
+
+      .cls-2 {
+        fill: #ff68ca;
+      }
+
+      .cls-3 {
+        fill: #d4d4d4;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #66e3f3;
+      }
+    </style>
+  </defs>
+  <g id="log">
+    <rect class="cls-3" x=".5" y=".5" width="1785.85" height="294.57"/>
+    <path class="cls-4" d="M1785.85,1v293.57H1V1h1784.85M1786.85,0H0v295.57h1786.85V0h0Z"/>
+  </g>
+  <g id="err">
+    <polygon class="cls-2" points=".5 1743.03 .5 1448.47 1120.74 1448.47 950.67 1743.03 .5 1743.03"/>
+    <path class="cls-4" d="M1119.87,1448.97l-169.49,293.57H1v-293.57h1118.87M1121.6,1447.97H0v295.57h950.96l170.65-295.57h0Z"/>
+  </g>
+  <g id="war">
+    <polygon class="cls-1" points=".5 1210.04 .5 915.47 1428.46 915.47 1258.39 1210.04 .5 1210.04"/>
+    <path class="cls-4" d="M1427.59,915.97l-169.49,293.57H1v-293.57h1426.59M1429.33,914.97H0v295.57h1258.68l170.65-295.57h0Z"/>
+  </g>
+  <g id="inf">
+    <polygon class="cls-5" points=".5 752.55 .5 457.99 1692.59 457.99 1522.52 752.55 .5 752.55"/>
+    <path class="cls-4" d="M1691.72,458.49l-169.49,293.57H1v-293.57h1690.72M1693.46,457.49H0v295.57h1522.81l170.65-295.57h0Z"/>
+  </g>
+</svg>

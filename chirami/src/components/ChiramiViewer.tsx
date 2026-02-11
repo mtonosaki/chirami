@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from "react";
-import {toTimestamp} from "../utils/toTimestamp.tsx";
-import {IconChirami} from "../assets/IconChirami.tsx";
-import {LogoChirami} from "../assets/LogoChirami.tsx";
-import {chiramiStore, type LogItem} from "../core/ChiramiStore.ts";
+import {IconChirami} from "../assets/IconChirami";
+import {LogoChirami} from "../assets/LogoChirami";
+import {chiramiStore, type LogItem} from "../core/ChiramiStore";
 import {safeStringify} from "../utils/safeStringify";
-import {styles, typeColors} from "./ChiramiViewer.styles.tsx";
+import {toTimestamp} from "../utils/toTimestamp";
+import {styles, typeColors} from "./ChiramiViewer.styles";
 
 export const ChiramiViewer: React.FC = () => {
   const [logs, setLogs] = useState<LogItem[]>([]);
@@ -33,7 +33,7 @@ export const ChiramiViewer: React.FC = () => {
         style={styles.chiramiButton}
         onClick={() => setIsOpen(true)}
       >
-        <IconChirami style={styles.buttonIcon} />
+        <IconChirami style={styles.buttonIcon}/>
         <span style={styles.chiramiButtonCount}>{chiramiStore.getTotalCount()}</span>
       </button>
     );
@@ -42,14 +42,15 @@ export const ChiramiViewer: React.FC = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <span><IconChirami style={styles.icon}/><LogoChirami style={styles.logo} /> ({chiramiStore.getTotalCount()})</span>
+        <span><IconChirami style={styles.icon}/><LogoChirami
+          style={styles.logo}/> ({chiramiStore.getTotalCount()})</span>
         <div>
           <button onClick={() => chiramiStore.clear()} style={styles.button}>Clear</button>
           <button onClick={() => setIsOpen(false)} style={styles.button}>Close ▼</button>
         </div>
       </div>
 
-      <div>
+      <div style={{textAlign: "left"}}>
         {logs.map((log) => (
           <div key={log.id} style={{...styles.logRow, color: typeColors[log.type]}}>
             <span style={styles.logTimestamp}>

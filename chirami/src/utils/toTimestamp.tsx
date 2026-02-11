@@ -1,6 +1,6 @@
 import {type ReactElement} from "react";
-import {styles} from "../components/ChiramiViewer.styles.tsx";
-import {pad, pad3} from "./pads.tsx";
+import {styles} from "../components/ChiramiViewer.styles";
+import {pad, pad3} from "./pads";
 
 export function toTimestamp(date: Date): ReactElement {
   const d = new Date(date.getTime());

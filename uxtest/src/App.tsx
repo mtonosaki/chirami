@@ -32,6 +32,9 @@ function App() {
         <button onClick={handleClick}>
           count is {count} (Click to log)
         </button>
+        <button onClick={() => console.log("HOGE", new Date())}>
+          Single LOG
+        </button>
         <p>
           Click the button and check the overlay at the bottom!
         </p>

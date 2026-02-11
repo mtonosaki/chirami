@@ -10,7 +10,7 @@ export default defineConfig({
       fileName: "chirami",
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
           react: 'React',
@@ -22,7 +22,7 @@ export default defineConfig({
   plugins: [
     dts({
       insertTypesEntry: true,
-      tsconfigPath: "./tsconfig.json"
+      tsconfigPath: "./tsconfig.build.json"
     })
   ],
 });
