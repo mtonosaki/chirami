@@ -1,6 +1,6 @@
-# Chirami
+<img width="1314" height="264" alt="BannerChirami" src="https://github.com/user-attachments/assets/3c3db6f2-ac7e-4ffd-8d79-98dcc098023f" />  
 
-A lightweight, overlay-style console log viewer for React applications.  
+Chirami, a lightweight, overlay-style console log viewer for React applications.  
 Perfect for debugging on mobile devices or environments without DevTools.
 
 ## Features
