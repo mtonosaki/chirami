@@ -19,6 +19,7 @@ declare class ChiramiStore {
     getLogs(): LogItem[];
     getTotalCount(): number;
     clear(): void;
+    dispose(): void;
 }
 export declare const chiramiStore: ChiramiStore;
 export {};

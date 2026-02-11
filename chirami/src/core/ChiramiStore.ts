@@ -74,6 +74,19 @@ class ChiramiStore {
     this.logs = [];
     this.notify();
   }
+
+  public dispose() {
+    if (!this.isPatched) return;
+
+    (['log', 'info', 'warn', 'error'] as const).forEach((type) => {
+      console[type] = this.originalConsole[type];
+    });
+
+    this.logs = [];
+    this.totalCount = 0;
+    this.listeners.clear();
+    this.isPatched = false;
+  }
 }
 
 export const chiramiStore = new ChiramiStore();
