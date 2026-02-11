@@ -1,23 +1,12 @@
 {
-  "name": "chirami",
-  "version": "0.0.2",
+  "name": "uxtest",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/chirami.umd.cjs",
-  "module": "./dist/chirami.js",
-  "types": "./dist/chirami.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/chirami.d.ts",
-      "import": "./dist/chirami.js",
-      "require": "./dist/chirami.umd.cjs"
-    }
-  },
   "scripts": {
-    "dev": "vite --open",
-    "build": "tsc && vite build",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -36,7 +25,6 @@
     "globals": "^16.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",
-    "vite": "^7.3.1",
-    "vite-plugin-dts": "^4.5.4"
+    "vite": "^7.3.1"
   }
 }

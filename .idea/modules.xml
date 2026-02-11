@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/chirami.iml" filepath="$PROJECT_DIR$/.idea/chirami.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uxtest/uxtest.iml" filepath="$PROJECT_DIR$/uxtest/uxtest.iml" />
+    </modules>
+  </component>
+</project>
