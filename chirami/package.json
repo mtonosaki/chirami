@@ -1,6 +1,15 @@
 {
   "name": "chirami",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "console",
+    "logger",
+    "debug",
+    "mobile",
+    "developer-tools"
+  ],
   "type": "module",
   "files": [
     "dist"
