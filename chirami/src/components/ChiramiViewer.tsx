@@ -40,11 +40,14 @@ export const ChiramiViewer: React.FC = () => {
   }
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} onClick={(e) => e.stopPropagation()}>
       <div style={styles.header}>
-        <span><IconChirami style={styles.icon}/><LogoChirami
-          style={styles.logo}/> ({chiramiStore.getTotalCount()})</span>
-        <div>
+        <div style={styles.headerLogo}>
+          <IconChirami style={styles.icon}/>
+          <LogoChirami style={styles.logo}/>
+          <div style={{whiteSpace: "nowrap"}}>({chiramiStore.getTotalCount()})</div>
+        </div>
+        <div style={{whiteSpace: "nowrap"}}>
           <button onClick={() => chiramiStore.clear()} style={styles.button}>Clear</button>
           <button onClick={() => setIsOpen(false)} style={styles.button}>Close ▼</button>
         </div>
