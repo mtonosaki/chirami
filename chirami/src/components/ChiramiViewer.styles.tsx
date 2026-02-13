@@ -23,6 +23,11 @@ export const styles = {
     zIndex: 9999,
     borderTop: "1px solid #333",
     boxShadow: "0 -2px 10px rgba(0,0,0,0.3)",
+    boxSizing: "border-box",
+    margin: 0,
+    padding: 0,
+    lineHeight: 1.5,
+    pointerEvents: "auto",
   } as React.CSSProperties,
 
   header: {
@@ -35,24 +40,42 @@ export const styles = {
     fontWeight: "700",
     position: "sticky",
     top: 0,
+    boxSizing: "border-box",
+    margin: 0,
+  } as React.CSSProperties,
+
+  headerLogo: {
+    display: "flex",
+    alignItems: "center",
+    whiteSpace: "nowrap",
   } as React.CSSProperties,
 
   button: {
+    appearance: "none",
+    border: "none",
     marginLeft: 8,
     backgroundColor: "#ffffff11",
+    color: "inherit",
+    fontFamily: "system-ui",
+    fontSize: "inherit",
     cursor: "pointer",
     padding: 4,
+    borderRadius: "2px",
+    lineHeight: "inherit",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
   icon: {
     width: "14px",
     height: "14px",
     marginRight: "-4px",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
   logo: {
     width: "80px",
     height: "14px",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
   logRow: {
@@ -60,12 +83,15 @@ export const styles = {
     borderBottom: "1px solid #333",
     whiteSpace: "pre-wrap",
     wordBreak: "break-all",
+    boxSizing: "border-box",
+    margin: 0,
   } as React.CSSProperties,
 
   logTimestamp: {
     color: "#777",
     fontFamily: "monospace",
     marginRight: "1em",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
   milliSecond: {
@@ -73,10 +99,12 @@ export const styles = {
   } as React.CSSProperties,
 
   logArgs: {
-    marginRight: "8px"
+    marginRight: "8px",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
   chiramiButton: {
+    appearance: "none",
     position: "fixed",
     bottom: "10px",
     right: "10px",
@@ -93,10 +121,16 @@ export const styles = {
     alignItems: "center",
     gap: "2px",
     fontWeight: "400",
+    boxSizing: "border-box",
+    margin: 0,
+    lineHeight: "normal",
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontSize: "inherit",
   } as React.CSSProperties,
 
   buttonIcon: {
     width: "12px",
+    boxSizing: "border-box",
   } as React.CSSProperties,
 
 
