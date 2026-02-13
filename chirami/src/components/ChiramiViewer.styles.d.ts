@@ -8,6 +8,7 @@ export declare const typeColors: {
 export declare const styles: {
     container: React.CSSProperties;
     header: React.CSSProperties;
+    headerLogo: React.CSSProperties;
     button: React.CSSProperties;
     icon: React.CSSProperties;
     logo: React.CSSProperties;
